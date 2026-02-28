@@ -44,7 +44,7 @@
 
 打开终端或命令提示符，运行：
 
-```bash
+```
 node --version
 npm --version
 ```
@@ -53,14 +53,14 @@ npm --version
 
 ### 2. 克隆仓库（如果使用 Git）
 
-```bash
+```
 git clone <repository-url>
 cd <repository-directory>
 ```
 
 ### 3. 创建工作目录
 
-```bash
+```
 mkdir xiaohongshu-agent
 cd xiaohongshu-agent
 ```
@@ -141,7 +141,7 @@ opencode init
 配置opencode要连接的本地mcp服务器
 
 模板如下:
-
+```
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
@@ -155,10 +155,10 @@ opencode init
     "open-orchestra@0.2.4"
   ]
 }
-
+```
 
 ### 2. 连接xiaohongshu-mcp 配置
-
+```
 1、xiaohongshu-mcp软件包下载后会有 
 
 .\xiaohongshu-login-windows-amd64.exe与.\xiaohongshu-mcp-windows-amd64.exe两个文件
@@ -170,17 +170,17 @@ opencode init
 4、将TransportType设为HTTP,URL设置为http://localhost:18060/mcp，Connection Type使用Via Proxy模式，点击connect,显示连接成功即可
 
 5、再右侧面板中点击List Tools使用check_login_status工具检查小红书登录状态,若状态正确则可以回到opencode了
-
+```
 ### 3. opencode自动发贴
-
-1、首先要给Agent设定人设,opencode执行命令默认加载根目录下的AGENT.md文件,因此我们需要在AGENT.md文件中告知opencode的Agent,你是谁,要做什么。(有需要模板的可以私信我)
+```
+1、首先要给Agent设定人设,opencode执行命令默认加载根目录下的AGENT.md文件,因此我们需要在AGENT.md文件中告知opencode的Agent,你是谁,要做什么。
 
 2、还要编写Agent人物设定.md与执行流程规范.md，你可以将这两样文件放置在同一个文件夹并在AGENT.md中写入信息,让opencode工作时必须阅读该文件夹下的所有手册
 
 3、配置图片模型,在执行流程规范中告知Agent若要发帖使用图片,应该使用哪个工具,我是写了一个python脚本供调用的。
 
 4、一切都配置好之后在opencode中说:发一篇xxx的帖子,Agent便自动执行
-
+```
 
 ### 例如以下是我的目录树
 
