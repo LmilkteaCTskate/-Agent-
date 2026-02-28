@@ -141,6 +141,7 @@ opencode init
 配置opencode要连接的本地mcp服务器
 
 模板如下:
+
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
@@ -154,6 +155,7 @@ opencode init
     "open-orchestra@0.2.4"
   ]
 }
+
 
 ### 2. 连接xiaohongshu-mcp 配置
 
